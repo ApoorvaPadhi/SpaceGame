@@ -9,31 +9,35 @@ var ranImg1="choice"+ranChoice1+".png";
 var cSource1="images/"+ranImg1;
 var img1=document.getElementById("img1");
 img1.setAttribute("src",cSource1);
-console.log(ranChoice1);
 oppNum=ranChoice1;
+
 if(myNum==oppNum){
   document.querySelector("h2").innerHTML="It's a draw!Boooringg!";
   var audio = new Audio('Boo.wav');
   audio.play();
 }
+
 else if (myNum==1 && oppNum==3) {
   document.querySelector("h2").innerHTML="Computer Wins! Boo you!";
   var audio = new Audio('Loser.wav');
   audio.play();
 }
+
 else if (myNum==3 && oppNum==1) {
   document.querySelector("h2").innerHTML="You win! Woohoo!";
   var audio = new Audio('Winner.wav');
   audio.play();
 }
+
 else if (myNum>oppNum) {
-document.querySelector("h2").innerHTML=" You win! Woohoo!";
-var audio = new Audio('Winner.wav');
+document.querySelector("h2").innerHTML=" Computer Wins! Boo you!";
+var audio = new Audio('Loser.wav');
 audio.play();
 }
+
 else if(myNum<oppNum){
-document.querySelector("h2").innerHTML="Computer Wins! Boo you!";
-var audio = new Audio('Loser.wav');
+document.querySelector("h2").innerHTML="You win! Woohoo!";
+var audio = new Audio('Winner.wav');
 audio.play();
 }
  })
