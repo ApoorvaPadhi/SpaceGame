@@ -1,0 +1,48 @@
+html{
+  height: 100%;
+}
+
+body {
+  background-image: linear-gradient(#c33764, #1d2671);
+  color: white;
+}
+h2{
+  font-family: 'Major Mono Display', monospace;
+  font-weight: bolder;
+  padding: 0 7%;
+}
+
+.navbar{
+  font-family: 'Bungee Inline', cursive;
+  font-weight: bold;
+  padding: 0 7%;
+}
+
+.brand{
+  font-size: 1.7rem;
+}
+
+.rules{
+  padding: 1% 7% 0 7%;
+  text-align: left;
+  font-family: 'Major Mono Display', monospace;
+}
+
+.choiceHeading{
+  padding: 0;
+}
+
+.row{
+  font-family: 'Bungee Inline', cursive;
+  text-align: left;
+  padding-bottom: 2%;
+}
+
+.option{
+  text-align: left;
+}
+
+.playAgain{
+  font-family: 'Bungee Inline', cursive;
+  margin: 0 7%;
+}
